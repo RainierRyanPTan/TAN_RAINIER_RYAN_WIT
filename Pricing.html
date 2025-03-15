@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>SEASHELLS NI IMELDA</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Features.html" class="nav-link">Features</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Pricing.html" class="nav-link active">Pricing</a>
+                    <div class="active-dot"></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="search" placeholder="Search for seashells...">
+                <span class="cart-icon">🛒</span>
+        </div>
+    </header>
+    <script>
+          
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            links.forEach(l => l.classList.remove('active'));
+            e.target.classList.add('active');
+          });
+        });
+      </script>
+    <main">
+        <h1>MANDAWEHHHNIAN <strong>EXCLUSIVE PRODUCTS</strong></h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>Sofa</h2>
+                <p>Comfortable</p>
+                <img src="1.jpg" alt="Sofa">
+                <p>Price: ₱ 250</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Table</h2>
+                <p>Modern</p>
+                <img src="2.jpg" alt="Table">
+                <p>Price: ₱ 85</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Chair</h2>
+                <p>Elegant</p>
+                <img src="3.jpg" alt="Chair">
+                <p>Price: ₱ 28</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Desk</h2>
+                <p>Spacious</p>
+                <img src="4.jpg" alt="Desk">
+                <p>Price: ₱ 12</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Wardrobe</h2>
+                <p>Large</p>
+                <img src="5.jpg" alt="Wardrobe">
+                <p>Price: ₱ 18</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Bed</h2>
+                <p>Comfortable</p>
+                <img src="6.jpg" alt="Bed">
+                <p>Price: ₱ 220</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Bookshelf</h2>
+                <p>Sturdy</p>
+                <img src="7.jpg" alt="Bookshelf">
+                <p>Price: ₱ 65</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Coffee Table</h2>
+                <p>Modern</p>
+                <img src="8.jpg" alt="Coffee Table">
+                <p>Price: ₱ 5</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>TV Stand</h2>
+                <p>Stylish</p>
+                <img src="9.jpg" alt="TV Stand">
+                <p>Price: ₱ 9</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Recliner</h2>
+                <p>Relaxing</p>
+                <img src="10.jpg" alt="Recliner">
+                <p>Price: ₱ 15</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Ottoman</h2>
+                <p>Multi-functional</p>
+                <img src="11.jpg" alt="Ottoman">
+                <p>Price: ₱ 42</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <h2>Bar Stool</h2>
+                <p>Modern</p>
+                <img src="12.jpg" alt="Bar Stool">
+                <p>Price: ₱ 35</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media-icons">
+            <a href="#" class="social-icon facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon google">
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon youtube">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy;Designed by <strong>Seashells ni Imelda with Warrant</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

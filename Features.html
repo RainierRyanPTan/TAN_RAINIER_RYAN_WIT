@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>SEASHELLS NI IMELDA</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Features.html" class="nav-link active">Features</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Pricing.html" class="nav-link">Pricing</a>
+                    <div class="active-dot"></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="search" placeholder="Search for seashells...">
+                <span class="cart-icon">🛒</span>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+    </header>
+    <script>
+          
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            links.forEach(l => l.classList.remove('active'));
+            e.target.classList.add('active');
+          });
+        });
+      </script>
+      
+    <main>
+        <div class="about-content">
+          <div class="about-image">
+              <img src="13.jpg" alt="Friends Photo">
+              <h1>Seashells are the hard, protective exoskeletons of marine mollusks, like snails, clams, and oysters, primarily composed of calcium carbonate, serving as a home and protection for these soft-bodied animals. </h1>
+          </div>
+          <div class="about-text">
+        
+        </div>
+    </main>
+    <footer>
+        <div class="social-media-icons">
+            <a href="#" class="social-icon facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon google">
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon youtube">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy;Designed by <strong>Seashells ni Imelda with Warrant</strong></p>
+    </footer>
+</body>
+</html>
